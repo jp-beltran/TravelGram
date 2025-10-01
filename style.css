@@ -1,0 +1,170 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --text-color-primary: #313131;
+  --text-color-secundary: #6C6C6C;
+  --brand-color: #EF5F4C;
+  --surface-color: #F5F5F5;
+  font-family: "Poppins", sans-serif;
+}
+
+.container{
+  padding: 0 20px;
+}
+
+/* Flexbox */
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+/* Background */
+.bg-surface{
+  background-color: var(--surface-color);
+}
+
+/* Texts */
+.text-primary{
+  color: var(--text-color-primary);
+}
+.text-secundary{
+  color: var(--text-color-secundary);
+}
+
+.text-brand{
+  color: var(--brand-color);
+}
+
+/* Header */
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 32px;
+  position: sticky;
+  top: 0;
+}
+
+header .logo{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem
+}
+
+header .logo h2{
+  font-size: 20px;
+
+}
+
+header nav{
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+header nav img{
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+}
+
+header nav .profile-img{
+  border: 1px solid var(--brand-color);
+}
+
+header nav h2{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+main .hero{
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 24px;
+}
+
+main .hero .profile{
+  display: flex;
+  gap: 2rem;
+  align-items: top;
+}
+
+main .hero .profile img{
+  width: 176px;
+  height: 176px;
+  border-radius: 50%;
+  border: 1px solid var(--brand-color);
+}
+
+main .hero .content{
+  display: flex;
+  flex-direction: column;
+  align-items: top;
+  gap: .5rem;
+  max-width: 50%;
+}
+
+main .hero .content h2{
+  font-size: 32px;
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+main .hero .content p{
+  font-size: 14px;
+  line-height: 1.70;
+  font-weight: 400;
+}
+
+main .hero .list{
+  list-style: none;
+  width: 25%;
+  
+}
+
+main .hero .list li{
+  display: flex;
+  gap: 8px;
+  list-style: none;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; 
+}
+
+main .photos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px var(--brand-color);
+  margin: 32px 0;
+}
+
+main .photos img{
+  border: 1px solid var(--brand-color);
+  width: 286px;
+  height: 286px;
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 32px;
+}
+
+footer p{
+  font-weight: 400;
+}
+
+footer .terms{
+  display: flex;
+  gap: 16px;
+}
